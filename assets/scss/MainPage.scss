@@ -1,0 +1,20 @@
+@import './common/mixins.scss';
+
+.pageBody {
+    display: flex;
+    gap: 80px;
+    @include mainBody;
+    margin-top: 128px;
+
+    @media (max-width: 992px) {
+        display: block;
+        margin-top: 48px;
+    }
+}
+.verticalImage {
+    width: 72px;
+
+    @media (max-width: 992px) {
+        display: none;
+    }
+}

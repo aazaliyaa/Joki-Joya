@@ -1,0 +1,35 @@
+.facts {
+    display: flex;
+    margin-top: 90px;
+
+    @media (max-width: 992px) {
+        margin-top: 46px;
+        margin-left: 16px;
+        margin-left: 16px;
+        justify-content: center;
+    }
+}
+.factsIcon {
+    height: 100px;
+    margin-right: 8px;
+
+    @media (max-width: 992px) {
+        display: none;
+    }
+}
+.factsCards {
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.factsCard {
+    height: 223px;
+
+    
+    @media (max-width: 992px) {
+        width: 340px;
+    }
+}
+.factsCards > div {
+    margin-bottom: -4px;
+}

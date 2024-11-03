@@ -1,0 +1,53 @@
+@import './common/mixins.scss';
+
+.title {
+    margin-top: 48px;
+    position: relative;
+    @include mainBody;
+
+    @media (max-width: 992px) {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+    }
+}
+.titleMain {
+    width: 95%;
+
+    @media (max-width: 992px) {
+        display: none;
+    }
+}
+
+.titleMainMobile {
+    display: none;
+    width: 343px;
+
+    @media (max-width: 992px) {
+        display: block;
+    }
+}
+
+.titleImage {
+    position: absolute;
+    width: 144px;
+    top: 0;
+    right: 0;
+
+    @media (max-width: 992px) {
+        display: none;
+    }
+}
+.titleImageMobile {
+    display: none;
+
+    @media (max-width: 992px) {
+        display: flex;
+        width: 100%;
+    }
+}
+.titleImageMobile img {
+    width: 144px;
+}

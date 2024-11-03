@@ -1,0 +1,129 @@
+@import './common/variables.scss';
+@import './common/fonts.scss';
+
+@mixin rifgtButtons($background, $color) {
+    background-color: $background;
+    color: $color;
+    border-radius: 30px;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'DrukCyrMedium';
+    text-transform: uppercase;
+    border: none;
+    padding: 7px 32px 9px 32px;
+    cursor: pointer;
+}
+@mixin leftButtons($fontFamily) {
+    font-family: $fontFamily;
+    background: transparent;
+    text-transform: uppercase;
+    color: $purple;
+    font-weight: 500;
+    border: 2px solid $purple;
+    border-radius: 30px;
+    padding: 0 16px;
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    height: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 8px;
+    box-sizing: border-box;
+}
+.headerBorderBottom {
+    position: absolute;
+    left: 0;
+    top: 64px;
+    height: 3px;
+    width: 100%;
+    background-image: linear-gradient(227.56deg, #FDF398 -0.59%, #F7BE87 22.84%, #E5637D 45.63%, #E84BBA 65.89%, #9310D8 99.13%);
+}
+.headerImage {
+    width: 40px;
+}
+.headerInner {
+    width: 80%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 992px) {
+        justify-content: center;
+    }
+}
+.headerInner > div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.buttonParty {
+    @include rifgtButtons($background: $light-green, $color: $black);
+
+    @media (max-width: 992px) {
+        display: none;
+    }
+}
+.buttonTickets {
+    @include rifgtButtons($background: $pink, $color: $white);
+}
+.buttonGeo {
+    @include leftButtons($fontFamily: 'DrukCyrMedium');
+    font-size: 22px;
+
+    @media (max-width: 992px) {
+        display: none;
+    }
+}
+.buttonTel {
+    @include leftButtons($fontFamily: 'DrukWideCyrMedium');
+    font-size: 13px;
+
+    @media (max-width: 992px) {
+        display: none;
+    }
+}
+.buttonGeoIcon {
+    width: 12px;
+}
+.buttonTelIcon {
+    width: 16px;
+} 
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+}
+.menuItem {
+    width: 32px;
+    height: 4px;
+    background-color: $blue;
+}
+.menuMiddleItem {
+    width: 22px;
+    height: 4px;
+    background-color: $blue;
+}
+.menuText {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $blue;
+    font-family: 'MontserratBold', sans-serif;
+}

@@ -1,0 +1,108 @@
+@import './common/variables.scss';
+@import './common/fonts.scss';
+
+
+@mixin text() {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'NunitoSansRegular';
+    width: 30%;
+
+    @media (max-width: 992px) {
+        width: 100%;
+        display: flex;
+        margin-top: 32px;
+     }
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 992px) {
+        flex-direction: column;
+        margin-left: 16px;
+        margin-right: 16px;
+     }
+}
+.space {
+    margin-top: 80px;
+}
+.descriptionTitle {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+
+    @media (max-width: 992px) {
+       flex-direction: row;
+       justify-content: flex-start;
+       gap: 24px;
+    }
+}
+.descriptionTitleText {
+    text-transform: uppercase;
+    color: $black;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'DrukWideCyrMedium';
+}
+.descriptionTitleIcon {
+    width: 128px;
+
+    @media (max-width: 992px) {
+        height: 56px;
+        width: auto;
+     }
+}
+.descriptionText {
+    @include text;
+}
+.descriptionTextIconBox {
+    display: none;
+
+    @media (max-width: 992px) {
+        display: block;
+        margin-right: 24px;
+        padding-left: 8px;
+        padding-right: 8px;
+        box-sizing: border-box;
+        
+     }
+}
+.descriptionTextIcon {
+    width: 40px;
+}
+.descriptionTextSpace {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    @media (max-width: 992px) {
+        justify-content: flex-start;
+     }
+}
+.descriptionButton {
+    width: 216px;
+    height: 48px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+    border: 2px solid $black;
+    box-sizing: border-box;
+    border-radius: 48px;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'DrukCyrMedium';
+    cursor: pointer;
+
+    @media (max-width: 992px) {
+        margin-top: 16px;
+     }
+}
+.descriptionButtonIcon {
+    width: 32px;
+    margin-top: 4px;
+}
