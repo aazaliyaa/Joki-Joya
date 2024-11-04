@@ -15,6 +15,7 @@
         </div>
     </div>
     <Interiors />
+    <AppFooter />
   </div>
 </template>
 

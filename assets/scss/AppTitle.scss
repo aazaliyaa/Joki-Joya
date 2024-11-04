@@ -21,7 +21,6 @@
         display: none;
     }
 }
-
 .titleMainMobile {
     display: none;
     width: 343px;
@@ -63,8 +62,24 @@
     transform: rotate(180deg);
     text-transform: uppercase;
 }
+.titleBox {
+    position: relative;
+    height: 144px;
+
+    @media (max-width: 992px) {
+       height: auto;
+    }
+}
 .sideTitle {
     position: absolute;
     bottom: 0;
-    right: 16px;
+    right: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    @media (max-width: 992px) {
+        display: none;
+    }
 }
