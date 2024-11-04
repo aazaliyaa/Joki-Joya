@@ -1,5 +1,8 @@
 @import './common/mixins.scss';
 
+.page {
+    position: relative;
+}
 .pageBody {
     display: flex;
     gap: 80px;

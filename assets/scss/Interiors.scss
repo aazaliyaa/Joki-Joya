@@ -1,0 +1,78 @@
+@import './common/mixins.scss';
+@import './common/variables.scss';
+
+@mixin arrows($background) {
+    background-color: $background;
+    width: 88px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interiors {
+    @include mainBody;
+    display: flex;
+    // background-color: aquamarine;
+}
+.interiorsImages {
+    display: flex;
+    justify-content: space-between;
+}
+.interiorsImages {
+    width: 30%;
+    box-sizing: border-box;
+    padding: 90px 24px 40px 0;
+}
+.interiorsImagesTitle {
+    width: 40%;
+}
+
+.interiorsImagesSlide {
+    height: 106px;
+}
+
+.interiorsPhotos {
+    width: 70%;
+    position: relative;
+}
+
+.interiorsPhotos img {
+    width: 100%;
+    // background-color: red;
+}
+.swiper {
+    position: absolute;
+    bottom: 46px;
+    left: -88px;
+    display: flex;
+}
+.swiperArrows {
+    cursor: pointer;
+    display: flex;
+}
+.swiperArrows img {
+    width: 50px;
+}
+.swiperArrowsLeft {
+    @include arrows($background: $blue);
+}
+.swiperArrowsRight {
+    @include arrows($background: $light-green);
+}
+.swiperCicrles {
+    margin-left: 80px;
+    display: flex;
+    gap: 24px;
+    margin-top: 64px;
+}
+.swiperCicrlesItem {
+    background-color: $light-green;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+}
+
+.swiperCicrlesActive {
+    width: 64px;
+}

@@ -2,15 +2,19 @@
 </script>
 
 <template>
-  <AppHeader />
-  <MainImage />
-  <AppTitle />
-  <div class="pageBody">
-    <img class="verticalImage" src="../public/vertical-image.svg" />
-    <div>
-        <Description />
-        <Facts />
+  <div class="page">
+    <AppHeader />
+    <Sidebar />
+    <MainImage />
+    <AppTitle />
+    <div class="pageBody">
+        <img class="verticalImage" src="../public/vertical-image.svg" />
+        <div>
+            <Description />
+            <Facts />
+        </div>
     </div>
+    <Interiors />
   </div>
 </template>
 
