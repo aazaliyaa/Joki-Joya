@@ -6,8 +6,8 @@
 .pageBody {
     display: flex;
     gap: 80px;
-    @include mainBody;
     margin-top: 128px;
+    @include mainBody;
 
     @media (max-width: 992px) {
         display: block;

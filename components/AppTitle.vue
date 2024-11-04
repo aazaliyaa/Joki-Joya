@@ -7,6 +7,10 @@
             <img src="../public/welcome.png" />
         </div>
   </div>
+  <!-- <div class="sideTitle">
+    <div class="sideTitleText">о нас</div>
+    <img class="sideTitleIcon" src ="../public/flower.svg" />
+  </div> -->
 </template>
 
 <style>

@@ -2,15 +2,6 @@
 
 .main {
     @include mainBody;
-
-    @media (max-width: 992px) {
-        width: 100%;
-        margin-left: 16px;
-        margin-right: 16px;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-    }
 }
 .mainImage {
     width: 100%;
@@ -21,11 +12,12 @@
     }
 }
 .mainImageMobile {
-    width: 343px;
-    border-radius: 32px;
     display: none;
 
     @media (max-width: 992px) {
         display: block;
+        width: auto;
+        max-width: 343px;
+        border-radius: 32px;
     }
 }

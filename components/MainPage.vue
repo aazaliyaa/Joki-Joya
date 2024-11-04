@@ -4,8 +4,8 @@
 <template>
   <div class="page">
     <AppHeader />
-    <Sidebar />
     <MainImage />
+    <Sidebar />
     <AppTitle />
     <div class="pageBody">
         <img class="verticalImage" src="../public/vertical-image.svg" />

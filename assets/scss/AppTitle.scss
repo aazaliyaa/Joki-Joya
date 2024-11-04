@@ -1,4 +1,5 @@
 @import './common/mixins.scss';
+@import './common/variables.scss';
 
 .title {
     margin-top: 48px;
@@ -50,4 +51,20 @@
 }
 .titleImageMobile img {
     width: 144px;
+}
+.sideTitleIcon {
+    width: 16px;
+}
+.sideTitleText {
+    font-size: 22px;
+    font-family: 'DrukCyrMedium';
+    color: $black;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-transform: uppercase;
+}
+.sideTitle {
+    position: absolute;
+    bottom: 0;
+    right: 16px;
 }
