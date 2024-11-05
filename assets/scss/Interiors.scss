@@ -83,7 +83,8 @@
 
     @media (max-width: 992px) {
         display: block;
-        width: 375px;
+        width: 100%;
+        max-width: 375px;
     }
 }
 .interiorsTitleMobile {

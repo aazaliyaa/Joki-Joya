@@ -19,6 +19,7 @@
         <img class="sidebarIcon" src="../public/sidebar-arrow.svg" />
         <div class="sidebarText">афиша</div>
     </div>
+    <div class="sidebarFooter"></div>
   </div>
 </template>
 

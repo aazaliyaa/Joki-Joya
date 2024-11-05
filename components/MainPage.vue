@@ -3,15 +3,17 @@
 
 <template>
   <div class="page">
-    <AppHeader />
-    <MainImage />
-    <Sidebar />
-    <AppTitle />
-    <div class="pageBody">
-        <img class="verticalImage" src="../public/vertical-image.svg" />
-        <div>
-            <Description />
-            <Facts />
+    <div  class="pageBackground">
+        <AppHeader />
+        <MainImage />
+        <Sidebar />
+        <AppTitle />
+        <div class="pageBody">
+            <img class="verticalImage" src="../public/vertical-image.svg" />
+            <div>
+                <Description />
+                <Facts />
+            </div>
         </div>
     </div>
     <Interiors />

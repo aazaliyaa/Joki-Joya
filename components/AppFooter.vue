@@ -1,5 +1,9 @@
 <template>
   <div class="footer">
+    <a href="#top" class="footerButtonMobile">
+        <span>наверх</span>
+        <img src="../public/up-arrow.svg" />
+    </a>
     <div class="footerLogo">
         <img src="../public/logo.svg" />
     </div>
@@ -15,14 +19,14 @@
         <img src="../public/jj-social.svg" />
     </div>
     <div class="footerText">
-        Joki Joya ©<br>
+        Joki Joya &copy;<br>
         2023<br>
         joki-joya.ru
     </div>
-    <div class="footerButton">
+    <a href="#top" class="footerButton">
         <span>наверх</span>
         <img src="../public/up-arrow.svg" />
-    </div>
+    </a>
   </div>
 </template>
 

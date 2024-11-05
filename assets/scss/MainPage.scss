@@ -1,7 +1,11 @@
 @import './common/mixins.scss';
+@import './common/variables.scss';
 
 .page {
     position: relative;
+}
+.pageBackground {
+    background-color: $beige;
 }
 .pageBody {
     display: flex;
