@@ -1,4 +1,37 @@
 <script setup lang="ts">
+    const photoId = ref<number>(0);
+    const imageUrl = ref<string>('/photo-1.png');
+    const photos: string[] = [
+        '/photo-1.png',
+        '/photo-2.jpg',
+        '/photo-3.jpeg',
+        '/photo-4.jpg',
+        '/photo-5.jpeg',
+        '/photo-6.jpg'
+    ];
+
+    const setCicrleActive = (): void => {
+        const circles =  document.querySelectorAll(".swiperCicrlesItem");
+        [...circles].map(elem => {
+            elem.classList.remove("swiperCicrlesActive");
+        });
+        [...circles][photoId.value].classList.add("swiperCicrlesActive")
+    }
+
+    const handleSwipeRight = (): void => {
+       if (photoId.value < photos.length-1) {
+           photoId.value++;
+           imageUrl.value = photos[photoId.value];
+           setCicrleActive();
+       }
+    };
+    const handleSwipeLeft = (): void => {
+        if (photoId.value > 0) {
+            photoId.value--;
+            imageUrl.value = photos[photoId.value];
+            setCicrleActive();
+        }
+    };
 </script>
 
 <template>
@@ -16,14 +49,14 @@
         <img src="../public/mobile-interiors.png" />
     </div>
     <div class="interiorsPhotos">
-        <img class="interiorsPhotosDesktop" src="../public/photo-1.png" />
+        <img class="interiorsPhotosDesktop" :src="imageUrl" />
         <img class="interiorsPhotosMobile" src="../public/mobile-photo-1.png" />
         <div class="swiper">
             <div class="swiperArrows">
-                <div class="swiperArrowsLeft">
+                <div class="swiperArrowsLeft" @click="handleSwipeLeft()">
                     <img src="../public/swipe-arrow-left.svg" />
                 </div>
-                <div class="swiperArrowsRight">
+                <div class="swiperArrowsRight" @click="handleSwipeRight()">
                     <img src="../public/swipe-arrow.svg" />
                 </div>
             </div>
